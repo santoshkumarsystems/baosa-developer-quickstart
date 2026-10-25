@@ -35,21 +35,16 @@ Understand the **business requirements**. Define the **business outcome** and **
 
 **1. Did we succeed? — Verified Success Rate**
 
-$$
-\boxed{\text{Verified Success Rate} = \frac{\text{Verified Successful Outcomes}}{\text{Total Evaluated Requests}} \times 100\%}
-$$
+**Verified Success Rate = (Verified Successful Outcomes ÷ Total Evaluated Requests) × 100%**
 
 **2. At what cost? — Cost per Verified Success**
 
-$$
-\boxed{\text{Cost per Verified Success} = \frac{\text{Total System Cost}}{\text{Verified Successful Outcomes}}}
-$$
+**Cost per Verified Success = Total System Cost ÷ Verified Successful Outcomes**
 
 **Example — 10 Employee Leave Assistant requests (illustrative)**
 
-| Did we succeed? | At what cost? |
-|---|---|
-| **80% Verified Success Rate** = 8 verified successes ÷ 10 requests × 100 | **$0.50 per Verified Success** = $4 total system cost ÷ 8 verified successes |
+- **Did we succeed? 80% Verified Success Rate** — 8 verified successes ÷ 10 requests × 100
+- **At what cost? $0.50 per Verified Success** — $4 total system cost ÷ 8 verified successes
 
 *Example numbers only—not measured BAOSA or Nebius results. Each success must satisfy its predefined business criteria and independent verification.*
 
