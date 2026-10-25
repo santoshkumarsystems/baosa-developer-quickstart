@@ -33,18 +33,7 @@ Understand the **business requirements**. Define the **business outcome** and **
 
 ## Two Business Metrics That Matter
 
-**1. Did we succeed? — Verified Success Rate**
-
-**Verified Success Rate = (Verified Successful Outcomes ÷ Total Evaluated Requests) × 100%**
-
-**2. At what cost? — Cost per Verified Success**
-
-**Cost per Verified Success = Total System Cost ÷ Verified Successful Outcomes**
-
-**Example — 10 Employee Leave Assistant requests (illustrative)**
-
-- **Did we succeed? 80% Verified Success Rate** — 8 verified successes ÷ 10 requests × 100
-- **At what cost? $0.50 per Verified Success** — $4 total system cost ÷ 8 verified successes
+![BAOSA measurement: business metrics first, engineering diagnostics second, optimize cost and performance without compromising outcomes](docs/images/business-engineering-metrics.png)
 
 *Example numbers only—not measured BAOSA or Nebius results. Each success must satisfy its predefined business criteria and independent verification.*
 
@@ -60,8 +49,6 @@ Understand the **business requirements**. Define the **business outcome** and **
 **BAOSA verifies what happened—not what the agent claimed.** [See both workflow and agent modes →](docs/DEMO.md)
 
 ## Measure WHAT. Optimize HOW.
-
-![BAOSA measurement: business metrics first, engineering diagnostics second, optimize cost and performance without compromising outcomes](docs/images/business-engineering-metrics.png)
 
 **Business metrics establish WHAT we achieved. Engineering metrics explain HOW to improve delivery.** The current demo focuses on verified business outcomes; engineering benchmarks are future work. [Measurement guide →](docs/BUSINESS-AND-ENGINEERING-METRICS.md)
 
