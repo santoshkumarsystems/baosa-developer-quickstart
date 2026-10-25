@@ -1,0 +1,5 @@
+# Python 3.10+; intentionally bounded dependency families, not a reproducible lockfile.
+openai>=1.60,<3
+streamlit>=1.40,<2
+httpx>=0.27,<1
+python-dotenv>=1,<2

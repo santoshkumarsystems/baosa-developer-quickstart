@@ -1,0 +1,28 @@
+name: BAOSA offline validation
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  fresh-install-and-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.13', '3.14']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install project and test dependencies
+        run: |
+          python -m pip install -r requirements-dev.txt
+          python -m pip check
+      - name: Check source documentation coverage
+        run: python scripts/check_docstrings.py
+      - name: Run offline regression tests
+        run: python -m pytest -q tests
+      - name: Check mock workflow and saved outcome
+        run: python cli.py --mode mock --yes
