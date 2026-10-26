@@ -29,13 +29,9 @@ Understand the **business requirements**. Define the **business outcome** and **
 
 ![Agent freedom: choose tools, execution order and alternatives inside the three non-negotiable boundaries, with verified outcomes](docs/images/agent-freedom.png)
 
-**Freedom of approach. Not freedom of authority.**
-
 ## Two Business Metrics That Matter
 
 ![BAOSA measurement: business metrics first, engineering diagnostics second, optimize cost and performance without compromising outcomes](docs/images/business-engineering-metrics.png)
-
-*Example numbers only—not measured BAOSA or Nebius results. Each success must satisfy its predefined business criteria and independent verification.*
 
 **Measure verified business outcomes—not how many agents, tokens, or tool calls the system uses.** [How success and cost are defined →](docs/METHODOLOGY-AND-OUTCOMES.md)
 
