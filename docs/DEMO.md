@@ -31,17 +31,9 @@ In the agent scenario the employee initially wants **8h Thursday + 8h Friday** b
 
 The predefined outcome contract decides what counts as a correct **resolution**. Keep employee-request **fulfillment** as a separate measure. A correct refusal is not an approval.
 
-## What Mock Mode actually runs
+## Mock and Live — End-to-End Flow
 
-```text
-BAOSA application
-  → simulated OpenAI-compatible /v1/chat/completions
-  → httpx.MockTransport (in-process; NO network)
-  → scripted tool-call response
-  → real trusted Python validation and confirmation
-  → in-memory pending record
-  → independent saved-state verification
-```
+![BAOSA end-to-end flow: Streamlit application chooses inference mode, the client factory creates either a mock simulated Nebius client using httpx.MockTransport with no external API call, or a live OpenAI client using Nebius credentials and the Token Factory HTTPS endpoint for real model inference](images/baosa_end_to_end_flow_diagram.png)
 
 Mock Mode has **no live Beam inference**, GPU usage, model-generated tokens or provider cost. **Live Mode** uses the developer's own configured Nebius Token Factory endpoint and is explicitly selected. Merely placing an API key in `.env` does not send any paid request.
 

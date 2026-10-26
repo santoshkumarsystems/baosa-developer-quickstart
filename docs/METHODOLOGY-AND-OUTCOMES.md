@@ -51,7 +51,7 @@ A refusal can be correct without fulfilling the original request. An employee de
 **1. Did we succeed? — Verified Success Rate**
 
 $$
-\text{Verified Success Rate} = \frac{\text{Verified Successful Outcomes}}{\text{Total Evaluated Requests}} \times 100\%
+\text{Verified Success Rate} = \frac{\text{Verified Successful Outcomes}}{\text{Total Evaluated Requests}} \times 100\text{\%}
 $$
 
 **2. At what cost? — Cost per Verified Success**
