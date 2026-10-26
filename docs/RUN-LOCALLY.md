@@ -8,10 +8,10 @@
 
 ## 1. Clone and install
 
-Replace `<YOUR-GITHUB-USERNAME>` with the actual publisher account **once this repository is uploaded**:
+Clone the published BAOSA repository:
 
 ```bash
-git clone https://github.com/<YOUR-GITHUB-USERNAME>/baosa-developer-quickstart.git
+git clone https://github.com/santoshkumarsystems/baosa-developer-quickstart.git
 cd baosa-developer-quickstart
 python3 -m venv .venv
 source .venv/bin/activate
@@ -25,7 +25,7 @@ For the supplied ZIP instead of a GitHub clone: extract it, enter the `baosa-dev
 ## 2. Start safely in Mock Mode
 
 ```bash
-python -m streamlit run app.py
+./start-baosa.sh
 ```
 
 Open **http://localhost:8501**, select **Mock · offline and free**, and try each workflow. The mocked request and response use an **in-memory HTTP transport**: the JSON envelope models `/v1/chat/completions` and tool calls, but **no actual network endpoint, Nebius account, Beam model, or real inference runs**. The agent's choices are scripted.
@@ -105,10 +105,10 @@ The WSL/Linux/macOS test script provides the additional five-test presentation s
 
 ### Optional fresh-clone quality check (recommended after publishing on GitHub)
 
-Start in an **empty directory**, replace `<YOUR-GITHUB-USERNAME>` with the published owner, and run:
+Start in a directory where BAOSA has not already been cloned, and run:
 
 ```bash
-git clone https://github.com/<YOUR-GITHUB-USERNAME>/baosa-developer-quickstart.git
+git clone https://github.com/santoshkumarsystems/baosa-developer-quickstart.git
 cd baosa-developer-quickstart
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements-dev.txt
